@@ -30,11 +30,11 @@ body{
     position:fixed;
     z-index: 5;
 }
-ul{
+.header ul{
     text-align: center;
 }
 
-li{
+.header li{
     display:inline-block;
     padding-inline: 5%;
 }
@@ -162,7 +162,6 @@ li{
     margin-bottom: 20vh;
 }
 
-
 @keyframes primo {
     0%   {transform: rotateZ(0deg);}
     25%  {transform: rotateZ(10deg);}
@@ -183,35 +182,31 @@ li{
     100%    {color:blue;}
 }
 
+#description li{
+    display: inline-block;
+    padding-inline: 2vw;
+}
+
 .tooltip{
     position: relative;
-    
 }
 
 .tooltip .tooltiptext{
     visibility: hidden;
     width: 120px;
     background-color: black;
-    color: #fff;
+    color: aquamarine;
     text-align: center;
     padding: 5px 0;
-    border-radius: 6px;
+    border-radius: 12px;
     position: absolute;
-    z-index: 1;
+    z-index: 2;
     transform: translate(-3vw,0);
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
-
-
-.competenze ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 .competenze{
     animation:sizechange 2s infinite;
     font-size: 2.5rem;
@@ -244,8 +239,12 @@ li{
     padding-top: 10vh;
 }
 
+.prof ul{
+    list-style-type: none;
+}
 
 .prof li{
+    display:inline-block;
     margin: 3vw;
     padding: 3vh;
     text-shadow: 1px 1px 10px rgb(0, 0, 0);
@@ -253,11 +252,42 @@ li{
     border-radius: 12px;
 }
 
-.footer{
+.email{
     color: aquamarine;
     font-weight:lighter;
-    margin-inline: 150px;
+    margin-inline: 10vw;
     text-align:left;
     font-size: 1.3rem;
-    margin-left: 40vw;
+    background-color: rgba(238, 232, 170, 0.288);
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    border-radius: 12px;
 }
+
+.facebook{
+    width:5vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.instasocial{
+    width: 5vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.linked{
+    width: 5vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.footer{
+    padding-top: 5vh;
+    background-color: black;
+}
+
+#rights{
+    color: rgba(128, 128, 128, 0.75);
+    padding-left: 2vw;
+}
+
