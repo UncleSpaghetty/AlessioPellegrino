@@ -1,0 +1,244 @@
+*{
+   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 100%;
+   line-height: 1.75;
+   z-index: 0;
+}
+
+body{
+    margin: 0px;
+    background-color:rgba(12, 12, 20, 0.9);
+}
+
+
+.header{
+    font-weight:lighter;
+    background-color: rgba(125, 125, 125, 0.5);
+    padding: 20px;
+    font-size: 20px;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 4;
+}
+
+#logo{
+    width: 5em;
+    display:block;
+    left: 3%;
+    top: 2%;
+    position:fixed;
+    z-index: 5;
+}
+ul{
+    text-align: center;
+}
+
+li{
+    display:inline-block;
+    padding-inline: 5%;
+}
+
+.btn {
+    color: aquamarine;
+    transition-duration: 0.2s;
+    padding: 10px 20px;
+    box-shadow: 0 8px 16px 0 rgba(82, 82, 82, 0.2), 0 6px 20px 0 rgba(199, 199, 199, 0.19);
+    border-radius: 15px;
+}
+
+.btn:hover {
+  background-color: rgba(44, 44, 44, 0.7);
+  transition: 0.5s;
+  box-shadow: 0 12px 16px 0 rgba(116, 116, 116, 0.24), 0 10px 20px 0 rgba(167, 167, 167, 0.19);
+  cursor: pointer;
+}
+
+.header a{
+    text-underline-offset: 80%;
+    text-underline-position: above;
+}
+
+.btn:active{
+    background-color: grey;
+    transform:translateY(4%);
+}
+
+.title{
+    font-weight:lighter;
+    transform: translate(0%, 25%);
+    color: aquamarine;
+    text-align: center;
+    font-size: 5rem;
+    transition: 2s ease;
+    transition-delay: 0.5s;
+}
+
+
+/*img:hover {
+  box-shadow: 0 0 1vh 2vh rgba(0, 140, 186, 0.5);
+  filter: blur(4px);
+  -webkit-filter: blur(2px);
+}*/
+
+.profile{
+    margin-left: 10vw;
+    margin-right: 68.8vw;
+    border-radius: 100%;
+}
+
+
+#alex{
+    width: 20vw;
+    height: auto;
+    border-radius: 100%;
+    opacity: 1;
+    backface-visibility: hidden;
+    z-index: 2;
+    position: absolute;
+}
+
+#insta{
+    opacity: 0;
+    z-index: 1;
+    width: 5vw;
+    height: auto;
+    position:relative;
+    z-index: 1;
+    left: 38%;
+    transform: translate(0, 200%);
+}
+
+
+#alex:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    filter: blur(3px);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.profile:hover #insta{
+    opacity: 1;
+    transition: 1s ease;
+    cursor: pointer;
+}
+.profile:hover #alex{
+    z-index: 1;
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    filter: blur(3px);
+}
+
+
+/*img:hover{
+    filter: blur(4px);
+    transition: 1s;
+}*/
+
+@media only screen and (max-width: 700px){
+  *{
+    width: 100%;
+  }
+}
+
+#primo{
+    color: aquamarine;
+    font-weight:lighter;
+    margin-inline: 150px;
+    text-align:center;  
+    margin-top: 20vh;
+    margin-bottom: 40vh;
+    font-size: 1.7rem;
+    animation: primo 1s 2s 2;
+    position: relative;
+    /*animation-name: primo;
+    animation-duration: 1s;
+    position: relative;
+    animation-delay: 1.5s;
+    animation-iteration-count: 2;*/
+}
+
+
+#description{
+    color: aquamarine;
+    font-weight:lighter;
+    margin-inline: 150px;
+    text-align:center;
+    font-size: 1.3rem;
+    margin-left: 40vw;
+}
+
+
+@keyframes primo {
+    0%   {transform: rotateZ(0deg);}
+    25%  {transform: rotateZ(10deg);}
+    50%  {transform: rotateZ(-10deg);}
+    75%  {transform: rotateZ(10deg);}
+    100% {transform: rotateZ(0deg);}
+}
+
+.inglese{
+    animation:colorchange 5s infinite alternate;
+}
+
+@keyframes colorchange {
+    0%      {color: aquamarine;}
+    25%     {color:blue;}
+    50%     {color:white;}
+    75%     {color:red;}
+    100%    {color:blue;}
+}
+
+.competenze ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.competenze{
+    animation:sizechange 2s infinite;
+    font-size: 2.5rem;
+}
+
+@keyframes sizechange {
+    0%      {transform:scale(0.8);}
+    50%     {transform:scale(1);}
+    100%    {transform:scale(0.8);}
+}
+
+.underline{
+    animation: state 1s infinite linear;
+}
+
+@keyframes state {
+    0%  {opacity: 1;}
+    50% {opacity: 0;}
+    100%    {opacity: 1;}    
+}
+
+.prof{
+    z-index: 3;
+    margin: 10vh;
+    font-weight:lighter;
+    margin-inline: 150px;
+    text-align:center;
+    font-size: 1.3rem;
+    color: aquamarine;
+    background-image: url(codingwallpaper.jpg);
+    background-size: cover;
+}
+
+
+.prof li{
+    margin: 3vw;
+    padding: 5vh;
+    text-shadow: 3vh 3vh 6vh grey;
+}
+
+.footer{
+    color: aquamarine;
+    font-weight:lighter;
+    margin-inline: 150px;
+    text-align:left;
+    font-size: 1.3rem;
+    margin-left: 40vw;
+}
