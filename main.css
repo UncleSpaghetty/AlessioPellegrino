@@ -223,15 +223,18 @@ li{
     text-align:center;
     font-size: 1.3rem;
     color: aquamarine;
-    background-image: url(codingwallpaper.jpg);
+    background-image: url(/docs/codingwallpaper.jpg);
     background-size: cover;
+    padding-top: 10vh;
 }
 
 
 .prof li{
     margin: 3vw;
-    padding: 5vh;
-    text-shadow: 3vh 3vh 6vh grey;
+    padding: 3vh;
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    background-color: rgba(238, 232, 170, 0.288);
+    border-radius: 12px;
 }
 
 .footer{
