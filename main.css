@@ -1,6 +1,5 @@
 *{
    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-   font-size: 100%;
    line-height: 1.75;
    z-index: 0;
 }
@@ -11,6 +10,23 @@ body{
 }
 
 
+.responsive{
+    width: 100%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 100%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
 .header{
     font-weight:lighter;
     background-color: rgba(125, 125, 125, 0.5);
@@ -18,16 +34,14 @@ body{
     font-size: 20px;
     position: sticky;
     top: 0;
+    display: grid;
     background-color: black;
     z-index: 4;
 }
 
 #logo{
-    width: 5em;
-    display:block;
-    left: 3%;
-    top: 2%;
-    position:fixed;
+    width: 7rem;
+    position: fixed;
     z-index: 5;
 }
 .header ul{
@@ -36,22 +50,22 @@ body{
 
 .header li{
     display:inline-block;
-    padding-inline: 5%;
+    padding-inline: 3rem;
 }
 
 .btn {
     color: aquamarine;
     transition-duration: 0.2s;
-    padding: 10px 20px;
-    box-shadow: 0 8px 16px 0 rgba(82, 82, 82, 0.2), 0 6px 20px 0 rgba(199, 199, 199, 0.19);
+    padding: 0.75rem 1.5rem;
+    box-shadow: 0 0.5rem 1.5rem 0 rgba(82, 82, 82, 0.2), 0 0.5rem 1.5rem 0 rgba(199, 199, 199, 0.19);
     border-radius: 15px;
 }
 
 .btn:hover {
-  background-color: rgba(44, 44, 44, 0.7);
-  transition: 0.5s;
-  box-shadow: 0 12px 16px 0 rgba(116, 116, 116, 0.24), 0 10px 20px 0 rgba(167, 167, 167, 0.19);
-  cursor: pointer;
+    background-color: rgba(44, 44, 44, 0.7);
+    transition: 0.5s;
+    box-shadow: 0 0.2rem 1rem 0 rgba(82, 82, 82, 0.2), 0 0.5rem 1rem 0 rgba(199, 199, 199, 0.19);
+    cursor: pointer;
 }
 
 .header a{
@@ -73,7 +87,6 @@ body{
     transition: 2s ease;
     transition-delay: 0.5s;
 }
-
 
 .profile{
     margin-left: 10vw;
@@ -128,21 +141,16 @@ body{
     transition: 1s;                 FIRST :HOVER
 }*/
 
-@media only screen and (max-width: 700px){
-  *{
-    width: 100%;
-  }
-}
 
 #primo{
     color: aquamarine;
     font-weight:lighter;
-    margin-inline: 150px;
+    margin-inline: 2em;
     text-align:center;  
-    margin-top: 20vh;
-    margin-bottom: 30vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     font-size: 1.7rem;
-    animation: primo 1s 2s 2;
+    animation: primo 1s 2s 1;
     position: relative;
     /*animation-name: primo;
     animation-duration: 1s;
@@ -151,6 +159,13 @@ body{
     animation-iteration-count: 2;                   FIRST TRY   */
 }
 
+@keyframes primo {
+    0%   {transform: rotateZ(0deg);}
+    25%  {transform: rotateZ(3deg);}
+    50%  {transform: rotateZ(-3deg);}
+    75%  {transform: rotateZ(3deg);}
+    100% {transform: rotateZ(0deg);}
+}
 
 #description{
     color: aquamarine;
@@ -159,33 +174,22 @@ body{
     font-size: 1.3rem;
     margin-left: 40vw;
     margin-right: 10vw;
-    margin-bottom: 20vh;
-}
-
-@keyframes primo {
-    0%   {transform: rotateZ(0deg);}
-    25%  {transform: rotateZ(10deg);}
-    50%  {transform: rotateZ(-10deg);}
-    75%  {transform: rotateZ(10deg);}
-    100% {transform: rotateZ(0deg);}
+    margin-bottom: 10vh;
 }
 
 .inglese{
-    animation:colorchange 5s infinite alternate;
+    /*animation:colorchange 5s infinite alternate;*/
+    color: red;
+    text-shadow:  0px 0px 2px blue;
 }
 
-@keyframes colorchange {
+/*@keyframes colorchange {
     0%      {color: aquamarine;}
     25%     {color:blue;}
     50%     {color:white;}
     75%     {color:red;}
     100%    {color:blue;}
-}
-
-#description li{
-    display: inline-block;
-    padding-inline: 2vw;
-}
+}*/
 
 .tooltip{
     position: relative;
@@ -208,8 +212,9 @@ body{
   visibility: visible;
 }
 .competenze{
-    animation:sizechange 2s infinite;
+    animation:sizechange 4s infinite;
     font-size: 2.5rem;
+    font-weight: bold;
 }
 
 @keyframes sizechange {
@@ -239,11 +244,32 @@ body{
     padding-top: 10vh;
 }
 
-.prof ul{
-    list-style-type: none;
+
+
+.skills , b{
+    -webkit-text-stroke: 0.04rem;
 }
 
-.prof li{
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.prof  li{
     display:inline-block;
     margin: 3vw;
     padding: 3vh;
