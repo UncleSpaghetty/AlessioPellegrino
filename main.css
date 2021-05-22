@@ -17,7 +17,9 @@ body{
 @media only screen and (max-width: 700px) {
   .responsive {
     width: 100%;
-    margin: 6px 0;
+  }
+  .header{
+      font-size: 0.7rem;
   }
 }
 
@@ -25,13 +27,16 @@ body{
   .responsive {
     width: 100%;
   }
+  .header{
+      font-size: 0.7rem;
+  }
 }
 
 .header{
     font-weight:lighter;
     background-color: rgba(125, 125, 125, 0.5);
     padding: 20px;
-    font-size: 20px;
+    font-size: 1.3rem;
     position: sticky;
     top: 0;
     display: grid;
@@ -40,7 +45,7 @@ body{
 }
 
 #logo{
-    width: 7rem;
+    width: 90px;
     position: fixed;
     z-index: 5;
 }
@@ -83,7 +88,7 @@ body{
     transform: translate(0%, 25%);
     color: aquamarine;
     text-align: center;
-    font-size: 5rem;
+    font-size: 5em;
     transition: 2s ease;
     transition-delay: 0.5s;
 }
@@ -242,15 +247,49 @@ body{
     background-image: url(/docs/codingwallpaper.jpg);
     background-size:cover;
     padding-top: 10vh;
+    padding-bottom: 5vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-radius: 12px;
 }
 
+.flex-parent{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-parent li{
+    width: 30%;
+}
 
 
 .skills , b{
     -webkit-text-stroke: 0.04rem;
 }
 
-.dropdown {
+.spacing{
+    margin: 5vh;
+}
+
+#it{
+    z-index: 3;
+    font-weight:lighter;
+    text-align:center;
+    font-size: 1.3rem;
+    color: aquamarine;
+    background-image: url(/docs/rogwallpaper.jpg);
+    background-size:cover;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-radius: 12px;
+}
+
+/*.dropdown {
   position: relative;
   display: inline-block;
 }
@@ -267,7 +306,8 @@ body{
 
 .dropdown:hover .dropdown-content {
   display: block;
-}
+}*/
+
 
 .prof  li{
     display:inline-block;
@@ -278,16 +318,71 @@ body{
     border-radius: 12px;
 }
 
+#it  li{
+    display:inline-block;
+    margin: 3vw;
+    padding: 3vh;
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    background-color: rgba(0, 26, 255, 0.37);
+    border-radius: 12px;
+}
+
 .email{
     color: aquamarine;
     font-weight:lighter;
     margin-inline: 10vw;
     text-align:left;
+    padding-left: 3vw;
     font-size: 1.3rem;
-    background-color: rgba(238, 232, 170, 0.288);
     text-shadow: 1px 1px 10px rgb(0, 0, 0);
     border-radius: 12px;
+    margin-top: 20vh;
+    margin-bottom: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: flex-start;
+    align-items: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    margin-right: 30%;
+    background-color: rgba(78, 78, 78, 0.795);
 }
+
+form{
+    transition: all 1s ease-in-out;
+}
+
+.form-control{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid goldenrod;
+    color: aquamarine;
+    margin-bottom: 5vh;
+}
+
+input{
+    height: 5vh;
+}
+
+form .submit{
+    background: rgba(255, 0, 0, 0.75);
+    border-color: transparent;
+    color: aquamarine;
+    border-radius: 4px;
+}
+
+form .submit:hover{
+    background-color: rgba(255, 0, 0);
+    cursor: pointer;
+}
+
+form .submit:focus{
+    background-color: rgba(255, 0, 0);
+}
+
 
 .facebook{
     width:5vh;
@@ -307,9 +402,18 @@ body{
     padding-right: 1vw;
 }
 
+.social{
+    color: rgba(127, 255, 212, 0.5);
+}
+
+
 .footer{
     padding-top: 5vh;
     background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 #rights{
