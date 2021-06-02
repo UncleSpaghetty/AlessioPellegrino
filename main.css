@@ -205,7 +205,7 @@ li{
     width: 65%;
     height: auto;
     border-radius: 100%;
-    animation: float 3s infinite ease-in-out;
+    animation: float 2.5s infinite ease-in-out;
 }
 
 @keyframes float {
@@ -363,6 +363,10 @@ form{
     margin-top: 5%;
 }
 
+form label{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 .form-control{
     width: 65%;
     background: transparent;
@@ -377,6 +381,10 @@ form{
 input{
     height: 100%;
     font-size: 1em;
+}
+.form-control:hover, .form-control:focus{
+    border-bottom: 3px solid goldenrod;
+    transition: 250ms ease;
 }
 
 form .submit{

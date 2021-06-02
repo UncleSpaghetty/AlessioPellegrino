@@ -65,11 +65,13 @@
         <div class="about-container" id="about">
             <div class="about">
                 <h2>Contattami:</h2>
-                <form id="contact-form" method="POST" action="">
-                    <input type="text" placeholder="Nome" name="mail" required class="form-control"><br>
-                    <input type="text" placeholder="Indirizzo Email" name="mail" required class="form-control"><br>
-                    <input type="text" placeholder="Messaggio" name="mail" required class="form-control"><br>
-                
+                <form id="contact-form" method="POST" action="action.php">
+                    <label>Nome:</label><br>
+                    <input type="text" placeholder="Nome" name="name" required class="form-control"><br>
+                    <label>Email:</label><br>
+                    <input type="email" placeholder="Indirizzo Email" name="mail" required class="form-control"><br>
+                    <label>Messaggio:</label><br>
+                    <input type="text" placeholder="Messaggio" name="msg" required class="form-control"><br>
                     <input type="submit" value="Invia" class="submit">
                 </form>
             </div>
