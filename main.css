@@ -49,9 +49,9 @@ li{
         position: relative;
     }
     header ul{
-        flex-wrap: nowrap;
-        justify-content: flex-end;
-        flex-direction: row;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto auto auto auto;
         align-items: center;
     }
     .topnav.responsive{
