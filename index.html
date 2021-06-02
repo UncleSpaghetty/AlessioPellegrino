@@ -4,102 +4,88 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alessio Pellegrino</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="docs\APlogo.png">
+    <title>Alessio Pellegrino</title>
 </head>
-
-<body class="responsive">
-
-    <div class="header">
-      <a href="#"><img id="logo" src="docs\APlogo.png" alt=""></a>
+<body>
+    <header>
         <ul>
-          <li><a class="btn" href="#">Homepage</a></li>
-          <li><a class="btn" href="#primo">Informazioni Generali</a></li>
-          <li><a class="btn" style="padding-right: 20px; padding-left: 20px;" href="#contact-form">Contatti</a></li>
-      </ul>
-    </div> 
-    <div class="titlediv">
-      <h1 class="title">Benvenuto!</h1>
-    </div>
-      <div class="maindiv">
-        <p id="primo">
-          Sono Alessio Pellegrino e questo è il mio sito personale!
-        </p>
-        <!--<a href="http:\\instagram.com\alepellegrino_">-->
+            <li><a href="#"><button class="btn">Homepage</button></a></li>
+            <li><a href="#prof"><button class="btn">Informazioni Generali</button></a></li>
+            <li><a href="#about"><button class="btn">Contatti</button></a></li>
+        </ul>
+    </header>
+    <div class="main">
+        <h1>Sono Alessio Pellegrino</h1>
+        <div class="profile">
+            <div class="alexcontainer">
+            <img src="docs/alex.jpg" alt="" id="alex">
+            </div>
+            <p id="first">Grande appassionato di informatica, specialmente in <br> <b>Front-End</b>  developing.</p><br>
         
-       <div class="profile">
-          <a href="http:\\instagram.com\alepellegrino_">    
-            <img src="docs\alex.jpg" alt="" id="alex">
-            <img src="docs\instalogo.png" alt="" id="insta">
-          </a>
-            
-        </div>
-
-        <div id="description">
-          <p>Grande appassionato di informatica, specialmente in <br> <b>Front-End</b>  developing.</p><br>
-        
-          <p>Mi posso definire <b>Junior Developer</b>   autodidatta. La mia forza maggiore è la volontà di imaparare nuovi linguaggi di programmazione, migliorare e ingrandire le conoscienze che già possiedo.
+          <p id="second">Mi posso definire <b>Junior Developer</b>   autodidatta. La mia forza maggiore è la volontà di imaparare nuovi linguaggi di programmazione, migliorare e ingrandire le conoscienze che già possiedo.
             </p><br>
-          <p>Riesco sempre ad addattarmi a nuovi ambienti di lavoro e creare legami forti con i miei colleghi</p><br>
-          
+          <p id="third">Riesco sempre ad addattarmi a nuovi ambienti di lavoro e creare legami forti con i miei colleghi</p>
         </div>
-        <div class="prof">
+        
+        <div class="prof" id="prof">
             <div class="competenze">Professional skills
             </div>
-              <p class="skills">Ho un'ottima conoscieza della lingua <b class="inglese">Inglese</b> e dei linguaggi:
-                <ul class="flex-parent"><b>
-                  <li class="tooltip">HTML <br><span class="tooltiptext">buona</span></li>
-                  <li class="tooltip">CSS <br><span class="tooltiptext">buona</span></li>
-                  <li class="tooltip">PHP <br><span class="tooltiptext">base</span></li>
-                  <li class="tooltip">SQL <br><span class="tooltiptext">base</span></li>
-                  <li class="tooltip">C++ <br><span class="tooltiptext">ottima</span></li>
+            <p>Ho una forte conoscienza della lingua <b class="inglese">Inglese</b> ed una variegata nei linguaggi:</p>
+                <ul><b id="langs">
+                    <li class="tooltip">HTML <br><span class="tooltiptext">buona</span></li>
+                    <li class="tooltip">CSS <br><span class="tooltiptext">buona</span></li>
+                    <li class="tooltip">JAVA <br><span class="tooltiptext">base</span></li>
+                    <li class="tooltip">PHP <br><span class="tooltiptext">base</span></li>
+                    <li class="tooltip">SQL <br><span class="tooltiptext">base</span></li>
+                    <li class="tooltip">C++ <br><span class="tooltiptext">ottima</span></li>
                 </ul></b>
-              </p>
-              
-              
-          </div>
-      </div>
-      <div class="spacing"></div>
-      <div id="it">
-        <h2>IT Management</h2>
-        <ul class="flex-parent">
-          <li>Assemblaggio e configurazione di Personal Computer <span class="underline">_</span> </li>
-          <li>Manutenzione dell'impianto elettronico <br> (diagnostica e riparazione) <span class="underline">_</span></li>
-          <li>Formazione in: <br> Sicurezza, Manutenzione e Ripristino di Sistema <br> (troubleshooting e windows power shell)
-            <span class="underline">_</span></li>
-          <li>Fondamenti sul Personal Computer <br>(configurazione e manutenzione) <span class="underline">_</span></li>
-          <li>Componenti Hardware e Assemblaggio <span class="underline">_</span></li>
-          <li>Sistemi Operativi <br> (installazione, partizionamento, configurazione) <span class="underline">_</span></li>
-          <li>Networking <br> (troubleshooting e configurazione) <span class="underline">_</span></li>
-        </ul>
-      </div>
-
-      <div class="email">
-        <span class="contattami">Contattami:
-        </span><br>
-        <form id="contact-form" method="POST" action="contact-form-handler.php">
-          <input type="text" placeholder="Nome" name="mail" required class="form-control"><br>
-          <input type="text" placeholder="Indirizzo Email" name="mail" required class="form-control"><br>
-          <input type="text" placeholder="Messaggio" name="mail" required class="form-control"><br>
-          
-          <input type="submit" value="Invia" class="form-control submit">
-          </form>
-      </div>
-
-      <div class="footer">
+            </p>
+        </div>
+        <div class="spacing" style="margin: 6%;"></div>
+        <div>
+            <ul id="it">
+                <h2 class="it-parent">IT Management</h2>
+                <li>Assemblaggio e configurazione di Personal Computer<span class="underline">_</span> </li>
+                <li>Manutenzione dell'impianto elettronico <br> (diagnostica e riparazione)<span class="underline">_</span></li>
+                <li>Formazione in: <br> Sicurezza, Manutenzione e Ripristino di Sistema <br> (troubleshooting e windows powershell)<span class="underline">_</span></li>
+                <li>Fondamenti sul Personal Computer <br>(configurazione e manutenzione)<span class="underline">_</span></li>
+                <li>Componenti Hardware e Assemblaggio<span class="underline">_</span></li>
+                <li>Sistemi Operativi <br> (installazione, partizionamento, configurazione)<span class="underline">_</span></li>
+                <li id="lastgrid">Networking <br> (troubleshooting e configurazione)<span class="underline">_</span></li>
+            </ul>
+        </div>
+        <div class="spacing" style="margin: 6%;"></div>
+        <div class="about-container" id="about">
+            <div class="about">
+                <h2>Contattami:</h2>
+                <form id="contact-form" method="POST" action="">
+                    <input type="text" placeholder="Nome" name="mail" required class="form-control"><br>
+                    <input type="text" placeholder="Indirizzo Email" name="mail" required class="form-control"><br>
+                    <input type="text" placeholder="Messaggio" name="mail" required class="form-control"><br>
+                
+                    <input type="submit" value="Invia" class="submit">
+                </form>
+            </div>
+            <div class="social"><h2>Puoi trovarmi qui:</h2>
+                <span>
+                    <a href="https://www.facebook.com/alessio.pellegrino.10"><img src="/docs/facebooklogo.jpg.png" alt=""
+                            class="facebook"></a>
+                    <a href="https://www.linkedin.com/in/alessiopellegrino98/"><img src="/docs/linkedinlogo.png" alt=""
+                            class="linked"></a>
+                    <a href="http://instagram.com/alex.pilgrim._._"><img src="/docs/instasocial.png" alt="" class="instasocial"></a>
+                </span>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
         <span id="rights">Developed and managed by Alessio Pellegrino. All rights to their respective owners.
         </span>
-        <span class="social">I miei social:
-               
-        <span>
-          <a href="https://www.facebook.com/alessio.pellegrino.10"><img src="/docs/facebooklogo.jpg.png" alt=""
-              class="facebook"></a>
-          <a href="https://www.linkedin.com/in/alessiopellegrino98/"><img src="/docs/linkedinlogo.png" alt=""
-              class="linked"></a>
-          <a href="http://instagram.com/alepellegrino_"><img src="/docs/instasocial.png" alt="" class="instasocial"></a>
-        </span>
-        </span>
-      </div>
+    </footer>
+    
 </body>
 </html>
