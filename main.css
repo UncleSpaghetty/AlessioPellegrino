@@ -108,6 +108,13 @@ li{
     #it h2{
         text-align: center;
     }
+    #it{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
     .about-container h2{
         font-size: 1em;
     }
@@ -161,7 +168,6 @@ li{
     #third{
         grid-row: 5 /6;
         grid-column: 2 / 3;
-        animation: rightfloat 0.5s ease-out 3s forwards;
     }
     #langs{
         display: grid;
@@ -225,15 +231,12 @@ li{
     margin-bottom: 10%;
 }
 
-
-
 #first, #second, #third{
     opacity: 0;
     left: 12%;
     margin-left: 10vw;
     width:60%;
     transform: translateX(50%);
-    animation: rightfloat 0.5s ease-out 2s forwards;
 }
 
 @keyframes rightfloat {
@@ -242,9 +245,14 @@ li{
         transform: translateX(15%);
     }
 }
-
+#first{
+    animation: rightfloat 0.5s ease-out 2s forwards;
+}
 #second{
     animation: rightfloat 0.5s ease-out 2.5s forwards;
+}
+#third{
+    animation: rightfloat 0.5s ease-out 3s forwards;
 }
 
 .prof{
