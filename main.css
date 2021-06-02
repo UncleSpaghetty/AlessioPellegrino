@@ -5,7 +5,6 @@ body{
     color: aquamarine;
     font-size: 1.3vw;
     font-weight:lighter;
-    --typewriterSpeed: 6s;
 }
 
 a{
@@ -15,8 +14,18 @@ a{
 header{
     background-color: black;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: center;
     font-size: 0.7em;
+    overflow: hidden;
+}
+
+header ul{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 }
 
 li{
@@ -24,9 +33,31 @@ li{
     padding-inline: 1em;
 }
 
-/*@media only screen and (max-width: 600px) {
-    
-}*/
+.topnav .icon {
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        font-size: 1em;
+    }
+    header li:not(:last-child){
+        visibility: hidden;
+    }
+    .topnav .icon{
+        visibility: visible;
+        position: relative;
+    }
+    header ul{
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        flex-direction: row;
+        align-items: center;
+    }
+    .topnav.responsive{
+        position: sticky; position: -webkit-sticky;
+    }
+}
 
 .btn{
     font-size: smaller;
