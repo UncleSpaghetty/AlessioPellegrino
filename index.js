@@ -48,11 +48,11 @@ function navbutton(){
     var x = document.getElementById("above");
     x.style.transform="scale(1)";
     x.style.transition="500ms ease-in";
-    x = document.getElementById("abovelink");
-    if (x.style.visibility === "hidden") {
-        x.style.visibility = "visible";
+    var y = document.getElementById("abovelink");
+    if (y.style.visibility === "hidden") {
+        y.style.visibility = "visible";
     }else{
-        x.style.visibility = "visible";
+        y.style.visibility = "visible";
     }
 }
 

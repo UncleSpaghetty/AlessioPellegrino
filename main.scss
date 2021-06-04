@@ -1,0 +1,10 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+header, .main, .profile, .prof, .it, .about-container{
+    scroll-snap-align: start;
+}
