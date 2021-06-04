@@ -7,18 +7,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css">    
     <script src="./index.js"></script>
     <link rel="icon" href="docs\APlogo.png">
     <title>Alessio Pellegrino</title>
 </head>
 <body>
-    <div class="above"><a href="#" id="abovelink"><button id="above" onclick="navbtn()">Torna su</button></a></div>
+    <div class="above"><a href="#" id="abovelink"><button id="above" onclick="navbtn()" onmouseover="navbtnover()" onmouseout="navbtnout()">Torna su</button></a></div>
     <header class="topnav" id="myTopnav">
         <ul>
-            <li><a href="#"><button class="btn">Homepage</button></a></li>
-            <li><a href="#third"><button class="btn"onclick="navbutton()">Informazioni Generali</button></a></li>
-            <li><a href="#about"><button class="btn" onclick="navbutton()">Contatti</button></a></li>
+            <li><a href="#"><button class="btn" id="navbtn">Homepage</button></a></li>
+            <li><a href="#third"><button class="btn"onclick="navbutton()" id="navbtn">Informazioni Generali</button></a></li>
+            <li><a href="#about"><button class="btn" onclick="navbutton()" id="navbtn">Contatti</button></a></li>
             <li><a href="javascript:void(0);" class="icon" onclick="navigation()" onclick="navigation1()"><i class="fa fa-bars"></i></a></li>
         </ul>
     </header>

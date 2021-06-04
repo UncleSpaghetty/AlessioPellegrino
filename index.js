@@ -47,7 +47,7 @@ function mouseout() {
 function navbutton(){
     var x = document.getElementById("above");
     x.style.transform="scale(1)";
-    x.style.transition="0.5s ease-in";
+    x.style.transition="500ms ease-in";
     x = document.getElementById("abovelink");
     if (x.style.visibility === "hidden") {
         x.style.visibility = "visible";
@@ -61,4 +61,22 @@ function navbtn(){
     x.style.transform = "scale(0)";
     x = document.getElementById("abovelink");
     x.style.visibility="hidden";
+}
+
+function navbtnover(){
+    var x = document.getElementById("above");
+    x.style.transform = "scale(1.2)";
+    x.style.transition = "150ms ease-out";
+}
+
+function navbtnout(){
+    var x = document.getElementById("above");
+    var y = document.getElementById("abovelink");
+    if (y.style.visibility === "hidden") {
+        x.style.transform = "scale(0)";
+        x.style.transition = "150ms ease-out";
+    } else {
+        x.style.transform = "scale(1)";
+        x.style.transition = "150ms ease-out";
+    }
 }
