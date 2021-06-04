@@ -61,6 +61,12 @@ li{
   color: rgba(127, 255, 212, 0.5);;
 }
 
+@media only screen and (min-width:1920px){
+    .instalogo.responsive{
+        visibility: visible;
+        z-index: 1;
+    }
+}
 @media only screen and (max-width: 600px) {
     body{
         font-size: 1em;
@@ -260,10 +266,6 @@ li{
     }
     .instalogo{
         width: 90px;
-    }
-    .instalogo.responsive{
-        visibility: visible;
-        z-index: 1;
     }
     #third{
         grid-row: 5 /6;
