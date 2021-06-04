@@ -13,25 +13,29 @@
     <title>Alessio Pellegrino</title>
 </head>
 <body>
+    <div class="above"><a href="#" id="abovelink"><button id="above" onclick="navbtn()">Torna su</button></a></div>
     <header class="topnav" id="myTopnav">
         <ul>
             <li><a href="#"><button class="btn">Homepage</button></a></li>
-            <li><a href="#prof"><button class="btn">Informazioni Generali</button></a></li>
-            <li><a href="#about"><button class="btn">Contatti</button></a></li>
-            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
+            <li><a href="#third"><button class="btn"onclick="navbutton()">Informazioni Generali</button></a></li>
+            <li><a href="#about"><button class="btn" onclick="navbutton()">Contatti</button></a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="navigation()"><i class="fa fa-bars"></i></a></li>
         </ul>
     </header>
     <div class="main">
-        <h1>Sono Alessio Pellegrino</h1>
+        <h1 id="maintitle">Benvenuto</h1>
+        <h2 id="name">Sono Alessio Pellegrino</h2>
+    </div>
         <div class="profile">
             <div class="alexcontainer">
-            <img src="docs/alex.jpg" alt="" id="alex">
+                <a href="http://instagram.com/alex.pilgrim._._">
+                    <img src="docs/instalogo.png" alt="" id="instalogo" class="instalogo" onmouseover="mousein()" onmouseout="mouseout()" >
+                    <img src="docs/alex.jpg" alt="" id="alex" class="alex" onmouseover="mousein()" onmouseout="mouseout()">
+                </a>
             </div>
             <p id="first">Grande appassionato di informatica, specialmente in <br> <b>Front-End</b>  developing.</p><br>
-        
-          <p id="second">Mi posso definire <b>Junior Developer</b>   autodidatta. La mia forza maggiore è la volontà di imaparare nuovi linguaggi di programmazione, migliorare e ingrandire le conoscienze che già possiedo.
-            </p><br>
-          <p id="third">Riesco sempre ad addattarmi a nuovi ambienti di lavoro e creare legami forti con i miei colleghi</p>
+            <p id="second">Mi posso definire <b>Junior Developer</b>   autodidatta. La mia forza maggiore è la volontà di imaparare nuovi linguaggi di programmazione, migliorare e ingrandire le conoscienze che già possiedo.</p><br>
+            <p id="third">Riesco sempre ad addattarmi a nuovi ambienti di lavoro e creare legami forti con i miei colleghi</p>
         </div>
         
         <div class="prof" id="prof">
@@ -77,16 +81,15 @@
             </div>
             <div class="social"><h2>Puoi trovarmi qui:</h2>
                 <span>
-                    <a href="https://www.facebook.com/alessio.pellegrino.10"><img src="/docs/facebooklogo.jpg.png" alt=""
+                    <h3>Facebook:</h3><a href="https://www.facebook.com/alessio.pellegrino.10"><img src="/docs/facebooklogo.jpg.png" alt=""
                             class="facebook"></a>
-                    <a href="https://www.linkedin.com/in/alessiopellegrino98/"><img src="/docs/linkedinlogo.png" alt=""
+                    <h3>LinkedIn:</h3><a href="https://www.linkedin.com/in/alessiopellegrino98/"><img src="/docs/linkedinlogo.png" alt=""
                             class="linked"></a>
-                    <a href="http://instagram.com/alex.pilgrim._._"><img src="/docs/instasocial.png" alt="" class="instasocial"></a>
+                    <h3>Instagram:</h3><a href="http://instagram.com/alex.pilgrim._._"><img src="/docs/instasocial.png" alt="" class="instasocial"></a>
                 </span>
             </div>
             
         </div>
-    </div>
     <footer>
         <span id="rights">Developed and managed by Alessio Pellegrino. All rights to their respective owners.
         </span>
