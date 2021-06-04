@@ -6,7 +6,6 @@ function navigation() {
         x.className = "topnav";
     }
 }
-
 function mousein() {
     var x = document.getElementById("instalogo");
     var y = document.getElementById("alex");

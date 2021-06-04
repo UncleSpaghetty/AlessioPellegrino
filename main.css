@@ -58,7 +58,8 @@ li{
 
 .topnav .icon {
   visibility: hidden;
-  color: rgba(127, 255, 212, 0.5);;
+  color: rgba(127, 255, 212, 0.5);
+  transition: 0.5s ease;
 }
 
 @media only screen and (min-width:1920px){
@@ -80,6 +81,8 @@ li{
     }
     header li:not(:last-child){
         visibility: hidden;
+        transform: scale(0);
+        transition: 250ms ease-in-out;
     }
     .topnav .icon{
         visibility: visible;
@@ -89,6 +92,7 @@ li{
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: auto auto auto auto;
+        column-gap: 1em;
         align-items: center;
     }
     .topnav.responsive{
@@ -99,6 +103,8 @@ li{
     }
     .topnav.responsive li{
         visibility: visible;
+        transform: scale(1);
+        transition: 250ms ease-in-out;
     }
     .btn{
         border-radius: 8px;
@@ -198,9 +204,9 @@ li{
 }
 
 #maintitle{
-    font-size: 2.5em;
+    font-size: 3em;
     font-family: 'Roboto Mono', monospace;
-    font-weight: 200;
+    letter-spacing: 1rem;
     position:relative;
     width: max-content;
 }
@@ -217,13 +223,13 @@ li{
 
 #maintitle::before{
     background-color: var(--bg-color);
-    animation: typewriter 3s steps(9) 1s forwards;
+    animation: typewriter 2s steps(7) 1.5s forwards;
 }
 
 #maintitle::after{
     width: 0.125em;
     background-color: black;
-    animation: typewriter 3s steps(9) 1s forwards,
+    animation: typewriter 2s steps(7) 1.5s forwards,
     blink 450ms steps(9) infinite;
 }
 
