@@ -22,6 +22,17 @@ a{
     left: 85%;
 }
 
+.above [href="#"]{
+    pointer-events: none;
+}
+#abovebutton{
+    opacity: 0;
+}
+#abovebutton.scrolled{
+    opacity: 1;
+    pointer-events: visible;
+}
+
 #above{
     border-radius: 100px;
     padding: 50%;
@@ -258,6 +269,12 @@ li{
     .btn{
         border-radius: 15px;
     }
+    .topnav{
+        top: 0;
+        position: sticky;
+        position: -webkit-sticky;
+        z-index: 2;
+    }
     #name{
         transform: translateY(1.5em);
     }
@@ -378,11 +395,19 @@ li{
     animation: rightfloat 0.5s ease-out 3s forwards;
 }
 
-.prof{
-    color: aquamarine;
+.profskilz{
     background-image: url(/docs/codingwallpaper.jpg);
     background-size:cover;
+    background-repeat: no-repeat;
+    padding-top: 35%;
+    filter: blur(2px);
+    margin: 3%;
+    border-radius: 12px;
+}
+.prof{
+    color: aquamarine;
     padding: 5%;
+    margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
     border-radius: 12px;
@@ -419,14 +444,20 @@ li{
     text-align: center;
 }
 
-#it{
-    color: aquamarine;
+.itmanage{
     background-image: url(/docs/rogwallpaper.jpg);
     background-size:cover;
+    background-repeat: no-repeat;
+    padding-top: 35%;
+    margin: 3%;
+    border-radius: 12px;
+}
+
+#it{
+    color: aquamarine;
     padding: 5%;
     margin-left: 5%;
     margin-right: 5%;
-    border-radius: 12px;
 }
 
 .it-parent{
@@ -446,8 +477,6 @@ li{
 
 
 #it li{
-    background-color: rgba(130, 130, 130, 0.5);
-    border-radius: 0.5em;
     font-size: smaller;
     text-shadow: black 0px 5px 5px;
     padding-inline: 0.7em;
