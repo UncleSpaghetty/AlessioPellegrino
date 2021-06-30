@@ -6,6 +6,7 @@ body{
     color: aquamarine;
     font-size: 1.3vw;
     font-weight:lighter;
+    box-sizing: border-box;
 }
 
 html{
@@ -20,17 +21,6 @@ a{
     position: fixed;
     top: 85%;
     left: 85%;
-}
-
-.above [href="#"]{
-    pointer-events: none;
-}
-#abovebutton{
-    opacity: 0;
-}
-#abovebutton.scrolled{
-    opacity: 1;
-    pointer-events: visible;
 }
 
 #above{
@@ -73,10 +63,21 @@ li{
   transition: 0.5s ease;
 }
 
-@media only screen and (min-width:1920px){
+@media only screen and (min-width:600px){
     .instalogo.responsive{
         visibility: visible;
         z-index: 1;
+    }
+    .skilzcontainer{
+        width: 100%;
+        text-align: center;
+    }
+    .it-parent{
+        padding-left: 40%;
+        padding-right: 40%;
+        padding-top: 7%;
+        padding-bottom: 7%;
+        border-radius: 14px;
     }
 }
 @media only screen and (max-width: 600px) {
@@ -130,9 +131,10 @@ li{
         transform: translateX(-10%);
     }
     #langs{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto auto auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-inline: 0.5em;
     }
     #name{
         transform: translateY(1em);
@@ -150,6 +152,13 @@ li{
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto;
+    }
+    .skilzcontainer{
+        width: 100%;
+        text-align: center;
+    }
+    .competenze{
+        border-radius: 7px;
     }
     .tooltip .tooltiptext{
         visibility: hidden;
@@ -174,6 +183,13 @@ li{
         flex-direction: column;
         align-items: center;
         justify-items: center;
+    }
+    .it-parent{
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-top: 7%;
+        padding-bottom: 7%;
+        border-radius: 7px;
     }
     .about-container h2{
         font-size: 1em;
@@ -294,6 +310,9 @@ li{
         grid-row: 5 /6;
         grid-column: 2 / 3;
     }
+    .competenze{
+        border-radius: 14px
+    }
     #langs{
         display: grid;
         grid-template-columns: auto auto auto auto auto auto;
@@ -395,19 +414,18 @@ li{
     animation: rightfloat 0.5s ease-out 3s forwards;
 }
 
+/*
 .profskilz{
     background-image: url(/docs/codingwallpaper.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     padding-top: 35%;
-    filter: blur(2px);
     margin: 3%;
     border-radius: 12px;
-}
+}*/
 .prof{
     color: aquamarine;
     padding: 5%;
-    margin-top: 5%;
     margin-left: 5%;
     margin-right: 5%;
     border-radius: 12px;
@@ -441,16 +459,13 @@ li{
     font-weight: bold;
     font-size: 1.3em;
     margin: 3%;
-    text-align: center;
-}
-
-.itmanage{
-    background-image: url(/docs/rogwallpaper.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    padding-top: 35%;
-    margin: 3%;
-    border-radius: 12px;
+    top: 30%;
+    left: 10%;
+    vertical-align: middle; 
+    background-image: url(docs/codingwallpaper.jpg);
+    background-size: cover;
+    padding: 10%;
+    text-shadow: 0px 0px 10px aquamarine;
 }
 
 #it{
@@ -467,6 +482,11 @@ li{
     margin: 5%;
     font-size: 1.3em;
     font-family: 'Roboto Mono', monospace;
+    background-image: url(docs/rogwallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0px 0px 10px aquamarine;
+    text-align: center;
 }
 
 @keyframes sizechange {
@@ -594,6 +614,11 @@ form .submit:focus{
     padding-right: 3%;
 }
 
+.githublogo{
+    width: 1.5em;
+    padding-left: 3%;
+    padding-right: 3%;
+}
 footer{
     background-color: black;
     padding-left: 1%;
