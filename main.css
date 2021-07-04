@@ -618,6 +618,8 @@ form .submit:focus{
     width: 1.5em;
     padding-left: 3%;
     padding-right: 3%;
+    background-color: aquamarine;
+    border-radius: 100%;
 }
 footer{
     background-color: black;
