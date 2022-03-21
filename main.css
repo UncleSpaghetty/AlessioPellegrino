@@ -477,7 +477,7 @@ li{
 
 .it-parent{
     grid-column: 1 / 4;
-    animation:sizechange 4s infinite;
+    /* animation:sizechange 4s infinite; */
     font-weight: bold;
     margin: 5%;
     font-size: 1.3em;
@@ -591,16 +591,10 @@ form .submit:focus{
     font-weight: lighter;
 }
 
-.social a:hover img{
+/* .social a:hover img{
     transform: scale(1.5);
     transition: 0.5s ease-out;
-}
-
-.facebook{
-    width:1.5em;
-    padding-left: 3%;
-    padding-right: 3%;
-}
+} */
 
 .instasocial{
     width:1.5em;
